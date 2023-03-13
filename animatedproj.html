@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../pro1 web/animatedproj.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.animation{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://cdn.pixabay.com/photo/2015/01/09/17/34/ice-594591__340.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.navbar{
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    color: aliceblue;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid aliceblue;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+.content{
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+}
+.sidebar{
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(#00545d #000729);
+    position: absolute;
+    right: 0;
+    top: 0;
+    
+}
+.menu{
+    display: block;
+    width: 25px;
+    margin: 40px auto 0;
+    cursor: pointer;
+}
+.sociallinks{
+    width: 40px;
+    height: 100vh;
+    background: linear-gradient(#00545d #000729);
+    position: absolute;
+    right: 0;
+    /* cursor: pointer; */
+    
+}
+.insta{
+    cursor: pointer;
+}
+.fb{
+    cursor: pointer;
+}
+.twitter{
+    cursor: pointer;
+}
+.share{
+    display: block;
+    width: 25px;
+    margin: 5px auto;
+    cursor: pointer;
+    right: 0;
+    bottom: 0;
+}
+.share{
+    /* text-align: center; */
+    position: absolute;
+    bottom: 17%;
+    right: 0;
+    width: 35px;
+    
+}
+.share1{
+    /* text-align: center; */
+    position: absolute;
+    bottom: 25%;
+    right: 0;
+    cursor: pointer;
+    
+}
+.bubbles{
+    width: 20px;
+    animation: bubble 7s linear infinite;
+    align-items: center;
+}
+.bubbles{
+    /* width: 50px; */
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    position: absolute;
+    bottom: -70px;
+    
+}
+#bubbles{
+    right: 0px;
+    /* margin: 60px 0 120px; */
+    
+}
+#bubbles1{
+    right: 100px;
+    /* margin: 80px 0 100px; */
+    width: 90px;
+}
+#bubbles2{
+    right: 200px;
+    /* margin: 100px 0 90px; */
+    
+}
+#bubbles3{
+    right: 300px;
+    /* margin: 60px 0 120px; */
+    
+}
+#bubbles4{
+    right: 400px;
+    /* margin: 60px 0 120px; */
+    
+}
+#bubbles5{
+    right: 500px;
+    /* margin: 60px 0 120px; */
+    
+}
+#bubbles6{
+    left: 100px;
+    /* margin: 60px 0 120px; */
+    
+}
+#bubbles7{
+    left: 200px;
+    /* margin: 60px 0 120px; */
+    
+}
+#bubbles8{
+    left: 300px;
+    /* margin: 60px 0 120px; */
+    
+}
+#bubbles9{
+    left: 400px;
+    /* margin: 60px 0 120px; */
+    
+}
+#bubbles10{
+    left: 500px;
+    /* margin: 60px 0 120px; */
+    
+}
+#bubbles11{
+    right: 0px;
+    /* margin: 60px 0 120px; */
+    
+}
+#bubbles12{
+    left: 700px;
+    /* margin: 60px 0 120px; */
+    
+}
+#bubbles13{
+    left: 600px;
+    /* margin: 60px 0 120px; */
+    
+}
+
+
+
+ @keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+        
+        opacity: 1;
+    }
+    75%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+
+} 
+#bubbles{
+animation-delay: 2s;
+}
+
+#bubbles1{
+animation-delay: 6s;
+}
+#bubbles2{
+    animation-delay: 1s;
+    
+}
+#bubbles3{
+    animation-delay: 5s;
+}
+#bubbles4{
+    animation-delay: 9s;
+}
+#bubbles5{
+    animation-delay: 4s;
+}
+#bubbles6{
+    animation-delay: 3s;
+}
+#bubbles7{
+    animation-delay: 2s;
+}
+#bubbles8{
+    animation-delay: 9s;
+}
+#bubbles9{
+    animation-delay: 1s;
+}
+#bubbles10{
+    animation-delay: 2s;
+}
+#bubbles11{
+    animation-delay: 6s;
+}
+#bubbles12{
+    animation-delay: 8s;
+}
+#bubbles13{
+    animation-delay: 5s;
+}    
+ 
+
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 36px;
+        line-height: 50px;
+    }
+     .sidebar{ 
+        /* width: 100%; */
+        height: 50px;
+        /* top: auto; */
+        /* bottom: 0; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: space-between; */
+        /* padding: 0 10px; */
+        /* box-sizing: border-box; */
+    } 
+    .logo{
+        width: 50px;
+        cursor: pointer;
+    }
+    .navbar{
+        width: 85%;
+        height: 15%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    button{
+        color: aliceblue;
+        padding: 10px 25px;
+        background: transparent;
+        border: 1px solid aliceblue;
+        border-radius: 20px;
+        outline: none;
+        cursor: pointer;
+        
+    }
+    #btn{
+        /* left: -20px; */
+        justify-content: space-between;
+        margin: 20px 20px 30px 0; 
+    }
+    .content{
+        width: auto;
+        /* position: unset; */
+        /* transform: none; */
+    }
+    .share1{
+        width: 40px;
+        /* position: unset; */
+        /* bottom: 30px; */
+        /* right: 0; */
+        
+    }
+
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .animation {
+      width: 100%;
+    }
+  }
+    </style>
+</head>
+<body>
+    <div class="animation">
+        <div class="navbar">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsxlf8mRmBWpaaqHXOpYxQvjnmo4dPqfgbHA&usqp=CAU" alt="" width="40px" style="border-radius: 25px;" class="logo"> 
+            <button type="button" id="btn">Sign up</button>
+        </div>
+        <div class="content">
+            <small>DISCOVER THE COLORFUL WORLD</small>
+            <h1>NEW EXPERIENCE</h1>
+            <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita itaque placeat mollitia! <br>
+                 possimus repellat, totam incidunt quam fugit adipisci.  </small> <br><br>
+            <button type="button">See more</button>
+        </div>
+        <div class="sidebar">
+            <img src="https://cdn-icons-png.flaticon.com/128/9293/9293128.png" class="menu" alt="">
+        </div>
+        <div class="sociallinks">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/1200px-Instagram-Icon.png" alt="" width="35px" class="insta">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/1200px-Facebook_icon.svg.png" alt="" width="35px" class="fb">
+             <img src="data:image/png;base64,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" alt="" width="35px" class="twitter">
+
+        
+            <img src="https://cdn-icons-png.flaticon.com/128/929/929539.png" alt="" width="35px" class="share1">
+            <img src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_info_outline_48px-512.png" alt="" width="35px" class="share">
+        </div>
+        <div class="bubbles">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="50px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles1">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="30px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles2">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="45px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles3">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="110px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles4">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="90px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles5">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="50px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles6">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="65px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles7">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="80px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles8">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="50px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles9">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="60px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles10">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="55px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles11">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="25px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles12">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="50px">
+            
+
+        </div>
+        <div class="bubbles" id="bubbles13">
+            
+            <img src="https://cdn.pixabay.com/photo/2013/07/13/10/43/blue-157652__340.png" alt="" width="80px">
+            
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>
